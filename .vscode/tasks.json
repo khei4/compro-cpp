@@ -1,0 +1,32 @@
+{
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++ -O0 -std=c++20 -g -DLOCAL -fsanitize=undefined,address -Wall -Wextra -Wno-unknown-pragmas -Wno-unused -Wno-unused-parameter -Wno-sign-compare -std=gnu++20 -D_GLIBCXX_DEBUG ${workspaceFolder}/main.cpp -o main",
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+            },
+            "group": {
+                "kind": "build",
+            }
+        },
+        {
+            "label": "competitive_test",
+            "type": "shell",
+            "command": "g++ -O0 -std=c++20 -g -DLOCAL -fsanitize=undefined,address -Wall -Wextra -Wno-unknown-pragmas -Wno-unused -Wno-unused-parameter -Wno-sign-compare -std=gnu++20 -D_GLIBCXX_DEBUG ${workspaceFolder}/main.cpp -o main && ./main < ${workspaceFolder}/input.txt ",
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+    ],
+    "version": "2.0.0"
+}
