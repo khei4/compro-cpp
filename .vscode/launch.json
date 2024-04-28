@@ -1,0 +1,18 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit:https://urldefense.com/v3/__https://go.microsoft.com/fwlink/?linkid=830387__;!!JmoZiZGBv3RvKRSx!5oImdNWUEmsPUKPkWuAb6ujoCSVOTNosFGg4Kv-X3x3duJUiV7szcBiDFnUqV9r6EJIuuT206g5iR-PF4tZTul8$ [go[.]microsoft[.]com]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/main",
+            "preLaunchTask": "build",
+            "args": [],
+            "stdio": "./input.txt",
+            "cwd": "${fileDirname}",
+        }
+    ]
+}
